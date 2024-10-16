@@ -1,1 +1,152 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Página Web De Fernando</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #3498db;
+        }
+        h1, h2 {
+            font-family: 'Georgia', serif;
+        }
+        h2 {
+            color: #4a90e2;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4a90e2;
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a la Página De Fernando</h1>
+</header>
+
+<h2>Sección de Imagen</h2>
+<p>A continuación, una imagen de un hermoso atardecer:</p>
+<img src="https://cdn.pixabay.com/photo/2023/10/21/11/46/sunset-8331285_640.jpg" alt="Un hermoso atardecer sobre el horizonte con tonos cálidos"/>
+
+<h2>Enlaces Útiles</h2>
+<ul>
+    <li><a href="https://www.example.com" target="_blank">Visita Example.com</a></li>
+    <li><a href="https://www.google.com" target="_blank">Buscar en Google</a></li>
+</ul>
+
+<h2>Ejemplo de Datos Tabulares</h2>
+<table>
+    <caption>Precios de frutas</caption>
+    <thead>
+        <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Manzana</td>
+            <td>$1.00</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Plátano</td>
+            <td>$0.50</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Naranja</td>
+            <td>$0.75</td>
+            <td>15</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Formulario de Contacto</h2>
+<p>Si tienes alguna pregunta, por favor llena el siguiente formulario:</p>
+<form action="#" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" aria-required="true" required>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" aria-required="true" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" aria-required="true" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
