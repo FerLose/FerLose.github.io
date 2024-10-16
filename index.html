@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Página Web De Fernando</title>
+    <title>Red Dead Redemption 2 - Página de Fans</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f0f8ff;
-            color: #333;
+            background-color: #1a1a1a; /* Fondo oscuro */
+            color: #ffffff; /* Texto blanco */
         }
         header {
-            background-color: #4a90e2;
+            background-color: #a52a2a; /* Rojo terroso, evoca el desierto */
             color: white;
             padding: 20px 0;
             text-align: center;
-            border-bottom: 5px solid #3498db;
+            border-bottom: 5px solid #8b0000; /* Rojo oscuro */
         }
         h1, h2 {
             font-family: 'Georgia', serif;
         }
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
         h2 {
-            color: #4a90e2;
+            color: #e74c3c;
         }
         img {
             display: block;
@@ -31,10 +36,10 @@
             max-width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombra más fuerte */
         }
         a {
-            color: #e74c3c;
+            color: #f39c12; /* Color dorado, acorde al oro */
             text-decoration: none;
         }
         a:hover {
@@ -44,97 +49,104 @@
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            background-color: #fff;
+            background-color: #333;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* Sombra más marcada */
         }
         th, td {
             padding: 12px;
             text-align: center;
-            border: 1px solid #ddd;
+            border: 1px solid #555;
         }
         th {
-            background-color: #4a90e2;
+            background-color: #8b0000; /* Fondo rojo oscuro */
             color: white;
         }
         tbody tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #444;
         }
         form {
-            background-color: #f9f9f9;
+            background-color: #2c2c2c; /* Fondo gris oscuro */
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
             margin-top: 30px;
         }
         form input, form textarea {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ddd;
+            border: 1px solid #555;
             border-radius: 5px;
+            background-color: #444;
+            color: white;
         }
         form button {
             padding: 10px 20px;
-            background-color: #4a90e2;
+            background-color: #a52a2a; /* Botón rojo terroso */
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         form button:hover {
-            background-color: #3498db;
+            background-color: #8b0000;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Bienvenido a la Página De Fernando</h1>
+    <h1>Red Dead Redemption 2</h1>
 </header>
 
 <h2>Sección de Imagen</h2>
-<p>A continuación, una imagen de un hermoso atardecer:</p>
-<img src="https://cdn.pixabay.com/photo/2023/10/21/11/46/sunset-8331285_640.jpg" alt="Un hermoso atardecer sobre el horizonte con tonos cálidos"/>
+<p>El vasto mundo de Red Dead Redemption 2, lleno de aventuras:</p>
+<img src="https://cdn.pixabay.com/photo/2018/05/19/10/09/sunset-3412943_1280.jpg" alt="Paisaje similar a los de Red Dead Redemption 2, con un atardecer sobre las montañas" />
 
 <h2>Enlaces Útiles</h2>
 <ul>
-    <li><a href="https://www.example.com" target="_blank">Visita Example.com</a></li>
-    <li><a href="https://www.google.com" target="_blank">Buscar en Google</a></li>
+    <li><a href="https://www.rockstargames.com/reddeadredemption2" target="_blank">Sitio Oficial de Red Dead Redemption 2</a></li>
+    <li><a href="https://www.youtube.com/results?search_query=red+dead+redemption+2+trailers" target="_blank">Ver Trailers en YouTube</a></li>
 </ul>
 
 <h2>Ejemplo de Datos Tabulares</h2>
+<p>Aquí tienes una tabla con algunas armas del juego:</p>
 <table>
-    <caption>Precios de frutas</caption>
+    <caption>Armas principales en Red Dead Redemption 2</caption>
     <thead>
         <tr>
-            <th scope="col">Producto</th>
+            <th scope="col">Arma</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Daño</th>
             <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Manzana</td>
-            <td>$1.00</td>
-            <td>10</td>
+            <td>Revólver Schofield</td>
+            <td>Pistola</td>
+            <td>65</td>
+            <td>$84.00</td>
         </tr>
         <tr>
-            <td>Plátano</td>
-            <td>$0.50</td>
-            <td>20</td>
+            <td>Carabina Lancaster</td>
+            <td>Rifle</td>
+            <td>75</td>
+            <td>$145.00</td>
         </tr>
         <tr>
-            <td>Naranja</td>
-            <td>$0.75</td>
-            <td>15</td>
+            <td>Escopeta de Doble Cañón</td>
+            <td>Escopeta</td>
+            <td>85</td>
+            <td>$95.00</td>
         </tr>
     </tbody>
 </table>
 
 <h2>Formulario de Contacto</h2>
-<p>Si tienes alguna pregunta, por favor llena el siguiente formulario:</p>
+<p>Si tienes alguna pregunta o quieres unirte a nuestra comunidad, llena el siguiente formulario:</p>
 <form action="#" method="POST">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" aria-required="true" required>
