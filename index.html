@@ -4,161 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Dead Redemption 2 - Página de Fans</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #1a1a1a; /* Fondo oscuro */
-            color: #ffffff; /* Texto blanco */
-        }
-        header {
-            background-color: #a52a2a; /* Rojo terroso, evoca el desierto */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 5px solid #8b0000; /* Rojo oscuro */
-        }
-        h1, h2 {
-            font-family: 'Georgia', serif;
-        }
-        h1 {
-            font-size: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-        h2 {
-            color: #e74c3c;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombra más fuerte */
-        }
-        a {
-            color: #f39c12; /* Color dorado, acorde al oro */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background-color: #333;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* Sombra más marcada */
-        }
-        th, td {
-            padding: 12px;
-            text-align: center;
-            border: 1px solid #555;
-        }
-        th {
-            background-color: #8b0000; /* Fondo rojo oscuro */
-            color: white;
-        }
-        tbody tr:nth-child(even) {
-            background-color: #444;
-        }
-        form {
-            background-color: #2c2c2c; /* Fondo gris oscuro */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-            margin-top: 30px;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #555;
-            border-radius: 5px;
-            background-color: #444;
-            color: white;
-        }
-        form button {
-            padding: 10px 20px;
-            background-color: #a52a2a; /* Botón rojo terroso */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background-color: #8b0000;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- Barra de navegación -->
 <header>
-    <h1>Red Dead Redemption 2</h1>
+    <nav>
+        <div class="logo">Red Dead Redemption 2</div>
+        <ul>
+            <li><a href="#about">Inicio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Armas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
 
-<h2>Sección de Imagen</h2>
-<p>El vasto mundo de Red Dead Redemption 2, lleno de aventuras:</p>
-<img src="https://cdn.pixabay.com/photo/2018/05/19/10/09/sunset-3412943_1280.jpg" alt="Paisaje similar a los de Red Dead Redemption 2, con un atardecer sobre las montañas" />
+<!-- Sección de presentación central -->
+<section class="hero">
+    <div class="profile-container">
+        <img src="https://c4.wallpaperflare.com/wallpaper/238/328/834/red-dead-red-dead-redemption-2-arthur-morgan-wallpaper-preview.jpg" alt="Arthur Morgan" class="profile-img">
+        <h1>Arthur Morgan</h1>
+        <p class="subtitle">Protagonista de Red Dead Redemption 2</p>
+        <div class="social-icons">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+        </div>
+        <a href="#details" class="details-btn">Explora la Historia</a>
+    </div>
+</section>
 
-<h2>Enlaces Útiles</h2>
-<ul>
-    <li><a href="https://www.rockstargames.com/reddeadredemption2" target="_blank">Sitio Oficial de Red Dead Redemption 2</a></li>
-    <li><a href="https://www.youtube.com/results?search_query=red+dead+redemption+2+trailers" target="_blank">Ver Trailers en YouTube</a></li>
-</ul>
+<!-- Sección de contenido -->
+<section id="about">
+    <div class="content-container">
+        <h2>Sobre Red Dead Redemption 2</h2>
+        <p>Explora el vasto mundo de aventuras de Red Dead Redemption 2. Vive la historia de Arthur Morgan mientras atraviesas un mundo lleno de desafíos y decisiones difíciles.</p>
+    </div>
+</section>
 
-<h2>Ejemplo de Datos Tabulares</h2>
-<p>Aquí tienes una tabla con algunas armas del juego:</p>
-<table>
-    <caption>Armas principales en Red Dead Redemption 2</caption>
-    <thead>
-        <tr>
-            <th scope="col">Arma</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Daño</th>
-            <th scope="col">Precio</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Revólver Schofield</td>
-            <td>Pistola</td>
-            <td>65</td>
-            <td>$84.00</td>
-        </tr>
-        <tr>
-            <td>Carabina Lancaster</td>
-            <td>Rifle</td>
-            <td>75</td>
-            <td>$145.00</td>
-        </tr>
-        <tr>
-            <td>Escopeta de Doble Cañón</td>
-            <td>Escopeta</td>
-            <td>85</td>
-            <td>$95.00</td>
-        </tr>
-    </tbody>
-</table>
+<!-- Sección de detalles de la historia -->
+<section id="details">
+    <div class="content-container">
+        <h2>Detalles de la Historia</h2>
+        <p>Arthur Morgan es un forajido veterano que debe lidiar con las tensiones internas de la banda Van der Linde y las presiones externas de la ley.</p>
+        <p>Presiona el botón para revelar más sobre los personajes principales:</p>
+        
+        <button id="revealBtn" class="styled-btn">Mostrar Personajes</button>
+        
+        <div id="character-info" class="hidden">
+            <div class="character">
+                <h3>John Marston</h3>
+                <img src="https://www.nicepng.com/png/detail/621-6210100_abiagil-roberts-https-www-rockstargames-sadie-adler-red.png" alt="John Marston">
+                <p>John es un forajido que intenta dejar atrás su pasado y empezar una nueva vida con su familia.</p>
+            </div>
+            <div class="character">
+                <h3>Dutch Van der Linde</h3>
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/343/629/desktop-wallpaper-red-dead-redemption-2-dutch-van-der-linde.jpg" alt="Dutch Van der Linde">
+                <p>Dutch es el líder carismático de la banda, pero sus ideales se tambalean mientras la ley se cierra sobre ellos.</p>
+            </div>
+            <div class="character">
+                <h3>Sadie Adler</h3>
+                <img src="https://www.pngitem.com/pimgs/m/496-4967359_red-dead-redemption-2-sadie-adler-hd-png.png" alt="Sadie Adler">
+                <p>Sadie es una mujer decidida que, tras perder a su esposo, se convierte en una temida forajida en busca de venganza.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<h2>Formulario de Contacto</h2>
-<p>Si tienes alguna pregunta o quieres unirte a nuestra comunidad, llena el siguiente formulario:</p>
-<form action="#" method="POST">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" aria-required="true" required>
+<!-- Sección de enlaces -->
+<section id="portfolio">
+    <div class="content-container">
+        <h2>Enlaces Útiles</h2>
+        <div class="link-cards">
+            <div class="link-card">
+                <h3>Sitio Oficial</h3>
+                <p>Visita el sitio oficial de Red Dead Redemption 2 para obtener más información sobre el juego.</p>
+                <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank" class="card-btn">Ir al Sitio</a>
+            </div>
+            <div class="link-card">
+                <h3>Ver Trailers</h3>
+                <p>Explora los trailers de Red Dead Redemption 2 para ver más sobre su emocionante historia.</p>
+                <a href="https://www.youtube.com/results?search_query=red+dead+redemption+2+trailers" target="_blank" class="card-btn">Ver Trailers</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <label for="email">Correo Electrónico:</label>
-    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" aria-required="true" required>
+<!-- Sección de armas -->
+<section id="skills">
+    <div class="content-container">
+        <h2>Armas en el Juego</h2>
+        <table>
+            <caption>Armas principales en Red Dead Redemption 2</caption>
+            <thead>
+                <tr>
+                    <th>Arma</th>
+                    <th>Tipo</th>
+                    <th>Daño</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Revólver Schofield</td>
+                    <td>Pistola</td>
+                    <td>65</td>
+                    <td>$84.00</td>
+                </tr>
+                <tr>
+                    <td>Carabina Lancaster</td>
+                    <td>Rifle</td>
+                    <td>75</td>
+                    <td>$145.00</td>
+                </tr>
+                <tr>
+                    <td>Escopeta de Doble Cañón</td>
+                    <td>Escopeta</td>
+                    <td>85</td>
+                    <td>$95.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" aria-required="true" required></textarea>
+<!-- Formulario de contacto -->
+<section id="contact">
+    <div class="content-container">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-    <button type="submit">Enviar</button>
-</form>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Scripts al final del body -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const revealBtn = document.getElementById('revealBtn');
+    const characterInfo = document.getElementById('character-info');
+
+    // Asegúrate de que los detalles de los personajes estén ocultos inicialmente
+    characterInfo.classList.add('hidden');
+
+    revealBtn.addEventListener('click', function() {
+        characterInfo.classList.toggle('hidden');
+
+        // Cambiar el texto del botón dependiendo del estado
+        if (!characterInfo.classList.contains('hidden')) {
+            this.textContent = 'Ocultar Personajes';
+        } else {
+            this.textContent = 'Mostrar Personajes';
+        }
+    });
+});
+</script>
 
 </body>
 </html>
