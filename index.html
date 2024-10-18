@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<!-- Barra de navegación -->
+<!-- Encabezado principal con navegación -->
 <header>
     <nav>
         <div class="logo">Red Dead Redemption 2</div>
@@ -22,132 +22,146 @@
     </nav>
 </header>
 
-<!-- Sección de presentación central -->
-<section class="hero">
-    <div class="profile-container">
-        <img src="https://c4.wallpaperflare.com/wallpaper/238/328/834/red-dead-red-dead-redemption-2-arthur-morgan-wallpaper-preview.jpg" alt="Arthur Morgan" class="profile-img">
-        <h1>Arthur Morgan</h1>
-        <p class="subtitle">Protagonista de Red Dead Redemption 2</p>
-        <div class="social-icons">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Twitter</a>
+<!-- Contenido principal de la página -->
+<main>
+    <!-- Sección de presentación central -->
+    <section class="hero">
+        <div class="profile-container">
+            <figure>
+                <img src="https://c4.wallpaperflare.com/wallpaper/238/328/834/red-dead-red-dead-redemption-2-arthur-morgan-wallpaper-preview.jpg" alt="Arthur Morgan" class="profile-img">
+                <figcaption>Arthur Morgan - Protagonista de Red Dead Redemption 2</figcaption>
+            </figure>
+            <h1>Arthur Morgan</h1>
+            <div class="social-icons">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+            <a href="#details" class="details-btn">Explora la Historia</a>
         </div>
-        <a href="#details" class="details-btn">Explora la Historia</a>
-    </div>
-</section>
+    </section>
 
-<!-- Sección de contenido -->
-<section id="about">
-    <div class="content-container">
-        <h2>Sobre Red Dead Redemption 2</h2>
-        <p>Explora el vasto mundo de aventuras de Red Dead Redemption 2. Vive la historia de Arthur Morgan mientras atraviesas un mundo lleno de desafíos y decisiones difíciles.</p>
-    </div>
-</section>
-
-<!-- Sección de detalles de la historia -->
-<section id="details">
-    <div class="content-container">
-        <h2>Detalles de la Historia</h2>
-        <p>Arthur Morgan es un forajido veterano que debe lidiar con las tensiones internas de la banda Van der Linde y las presiones externas de la ley.</p>
-        <p>Presiona el botón para revelar más sobre los personajes principales:</p>
-        
-        <button id="revealBtn" class="styled-btn">Mostrar Personajes</button>
-        
-        <div id="character-info" class="hidden">
-            <div class="character">
-                <h3>John Marston</h3>
-                <img src="https://www.nicepng.com/png/detail/621-6210100_abiagil-roberts-https-www-rockstargames-sadie-adler-red.png" alt="John Marston">
-                <p>John es un forajido que intenta dejar atrás su pasado y empezar una nueva vida con su familia.</p>
-            </div>
-            <div class="character">
-                <h3>Dutch Van der Linde</h3>
-                <img src="https://e1.pxfuel.com/desktop-wallpaper/343/629/desktop-wallpaper-red-dead-redemption-2-dutch-van-der-linde.jpg" alt="Dutch Van der Linde">
-                <p>Dutch es el líder carismático de la banda, pero sus ideales se tambalean mientras la ley se cierra sobre ellos.</p>
-            </div>
-            <div class="character">
-                <h3>Sadie Adler</h3>
-                <img src="https://www.pngitem.com/pimgs/m/496-4967359_red-dead-redemption-2-sadie-adler-hd-png.png" alt="Sadie Adler">
-                <p>Sadie es una mujer decidida que, tras perder a su esposo, se convierte en una temida forajida en busca de venganza.</p>
-            </div>
+    <!-- Sección sobre el juego -->
+    <article id="about">
+        <div class="content-container">
+            <h2>Sobre Red Dead Redemption 2</h2>
+            <p>Explora el vasto mundo de aventuras de Red Dead Redemption 2. Vive la historia de Arthur Morgan mientras atraviesas un mundo lleno de desafíos y decisiones difíciles.</p>
         </div>
-    </div>
-</section>
+    </article>
 
-<!-- Sección de enlaces -->
-<section id="portfolio">
-    <div class="content-container">
-        <h2>Enlaces Útiles</h2>
-        <div class="link-cards">
-            <div class="link-card">
-                <h3>Sitio Oficial</h3>
-                <p>Visita el sitio oficial de Red Dead Redemption 2 para obtener más información sobre el juego.</p>
-                <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank" class="card-btn">Ir al Sitio</a>
-            </div>
-            <div class="link-card">
-                <h3>Ver Trailers</h3>
-                <p>Explora los trailers de Red Dead Redemption 2 para ver más sobre su emocionante historia.</p>
-                <a href="https://www.youtube.com/results?search_query=red+dead+redemption+2+trailers" target="_blank" class="card-btn">Ver Trailers</a>
+    <!-- Sección de detalles de la historia -->
+    <section id="details">
+        <div class="content-container">
+            <h2>Detalles de la Historia</h2>
+            <p>Arthur Morgan es un forajido veterano que debe lidiar con las tensiones internas de la banda Van der Linde y las presiones externas de la ley.</p>
+            <p>Presiona el botón para revelar más sobre los personajes principales:</p>
+            
+            <button id="revealBtn" class="styled-btn">Mostrar Personajes</button>
+            
+            <div id="character-info" class="hidden">
+                <div class="character">
+                    <h3>John Marston</h3>
+                    <figure>
+                        <img src="https://www.nicepng.com/png/detail/621-6210100_abiagil-roberts-https-www-rockstargames-sadie-adler-red.png" alt="John Marston">
+                        <figcaption>John es un forajido que intenta dejar atrás su pasado.</figcaption>
+                    </figure>
+                </div>
+                <div class="character">
+                    <h3>Dutch Van der Linde</h3>
+                    <figure>
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/343/629/desktop-wallpaper-red-dead-redemption-2-dutch-van-der-linde.jpg" alt="Dutch Van der Linde">
+                        <figcaption>Dutch es el líder carismático de la banda.</figcaption>
+                    </figure>
+                </div>
+                <div class="character">
+                    <h3>Sadie Adler</h3>
+                    <figure>
+                        <img src="https://www.pngitem.com/pimgs/m/496-4967359_red-dead-redemption-2-sadie-adler-hd-png.png" alt="Sadie Adler">
+                        <figcaption>Sadie es una mujer decidida en busca de venganza.</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sección de armas -->
-<section id="skills">
-    <div class="content-container">
-        <h2>Armas en el Juego</h2>
-        <table>
-            <caption>Armas principales en Red Dead Redemption 2</caption>
-            <thead>
-                <tr>
-                    <th>Arma</th>
-                    <th>Tipo</th>
-                    <th>Daño</th>
-                    <th>Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Revólver Schofield</td>
-                    <td>Pistola</td>
-                    <td>65</td>
-                    <td>$84.00</td>
-                </tr>
-                <tr>
-                    <td>Carabina Lancaster</td>
-                    <td>Rifle</td>
-                    <td>75</td>
-                    <td>$145.00</td>
-                </tr>
-                <tr>
-                    <td>Escopeta de Doble Cañón</td>
-                    <td>Escopeta</td>
-                    <td>85</td>
-                    <td>$95.00</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
+    <!-- Sección de enlaces útiles -->
+    <section id="portfolio">
+        <div class="content-container">
+            <h2>Enlaces Útiles</h2>
+            <div class="link-cards">
+                <div class="link-card">
+                    <h3>Sitio Oficial</h3>
+                    <p>Visita el sitio oficial de Red Dead Redemption 2 para obtener más información sobre el juego.</p>
+                    <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank" class="card-btn">Ir al Sitio</a>
+                </div>
+                <div class="link-card">
+                    <h3>Ver Trailers</h3>
+                    <p>Explora los trailers de Red Dead Redemption 2 para ver más sobre su emocionante historia.</p>
+                    <a href="https://www.youtube.com/results?search_query=red+dead+redemption+2+trailers" target="_blank" class="card-btn">Ver Trailers</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Formulario de contacto -->
-<section id="contact">
-    <div class="content-container">
-        <h2>Contacto</h2>
-        <form action="#" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <!-- Sección de armas en el juego -->
+    <section id="skills">
+        <div class="content-container">
+            <h2>Armas en el Juego</h2>
+            <table>
+                <caption>Armas principales en Red Dead Redemption 2</caption>
+                <thead>
+                    <tr>
+                        <th>Arma</th>
+                        <th>Tipo</th>
+                        <th>Daño</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Revólver Schofield</td>
+                        <td>Pistola</td>
+                        <td>65</td>
+                        <td>$84.00</td>
+                    </tr>
+                    <tr>
+                        <td>Carabina Lancaster</td>
+                        <td>Rifle</td>
+                        <td>75</td>
+                        <td>$145.00</td>
+                    </tr>
+                    <tr>
+                        <td>Escopeta de Doble Cañón</td>
+                        <td>Escopeta</td>
+                        <td>85</td>
+                        <td>$95.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+</main>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+<!-- Pie de página con formulario de contacto -->
+<footer>
+    <section id="contact">
+        <div class="content-container">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</section>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+</footer>
 
 <!-- Scripts al final del body -->
 <script>
