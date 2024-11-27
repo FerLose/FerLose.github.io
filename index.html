@@ -3,120 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Red Dead Redemption 2</title>
+    <title>Red Dead Redemption 2 - Página de Fans</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Blog RDR2</h1>
-                <p>El rincón de los forajidos</p>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#guías">Guías</a></li>
-                    <li><a href="#noticias">Noticias</a></li>
-                    <li><a href="#personajes">Personajes</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Bienvenido al Salvaje Oeste</h2>
-            <p>Explora guías, personajes y secretos del universo de Red Dead Redemption 2.</p>
-            <button class="btn" onclick="location.href='#guías'" aria-label="Explorar Guías">Explorar Guías</button>
+<!-- Encabezado principal con navegación -->
+<header>
+    <nav>
+        <div class="logo">Red Dead Redemption 2</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#guías">Guías</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#contacto">Video</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenido principal de la página -->
+<main>
+    <!-- Sección de presentación central -->
+    <section id="inicio" class="hero">
+        <div class="profile-container">
+            <figure>
+                <img src="https://i.pinimg.com/originals/78/f7/7f/78f77f01a0530144a9865017029bfa51.gif" alt="Arthur Morgan" class="profile-img">
+                <figcaption>El rincón de los forajidos</figcaption>
+            </figure>
+            <h1>Blog RDR2</h1>
+            <div class="social-icons">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+            <a href="#details" class="details-btn">Explora la Historia</a>
         </div>
     </section>
 
-    <main>
-        <section id="guías" class="section guías">
-            <div class="container">
-                <h2>Guías Destacadas</h2>
-                <div class="card-container">
-                    <article class="card">
-                        <img src="https://gamespot.com/a/uploads/original/1179/11799911/3539520-bears.jpg" alt="Guía de Supervivencia">
-                        <h3 id="titulo1">Supervivencia en el Oeste</h3>
-                        <p>Consejos esenciales para sobrevivir en un mundo lleno de peligros.</p>
-                        <button class="btn" id="btn" aria-labelledby="titulo1 btn" onclick="location.href='#'">Leer más</button>
-                    </article>
-                    <article class="card">
-                        <img src="https://i.blogs.es/juegos/13424/red_dead_3__nombre_temporal_/fotos/noticias/red_dead_3__nombre_temporal_-4711928.jpg" alt="Mejores armas">
-                        <h3 id="titulo2">Las Mejores Armas</h3>
-                        <p>Descubre las armas más poderosas y cómo obtenerlas.</p>
-                        <button class="btn" id="btn" aria-labelledby="titulo2 btn" onclick="location.href='#'">Leer más</button>
-                    </article>
-                </div>
+    <!-- Sección sobre el juego -->
+    <section id="guías" class="section guías">
+        <div class="container">
+            <h2>Guías Destacadas</h2>
+            <div role="grid" class="card-container">
+                <article role="row" class="card">
+                    <img src="https://gamespot.com/a/uploads/original/1179/11799911/3539520-bears.jpg" alt="Supervivencia en el Oeste">
+                    <h3 id="titulo1">Supervivencia en el Oeste</h3>
+                    <p>Consejos esenciales para sobrevivir en un mundo lleno de peligros.</p>
+                    <button class="btn" aria-labelledby="titulo1 boton1" id="boton1" onclick="location.href='supervivencia.html'">Leer más</button>
+                </article>
+                <article role="row" class="card">
+                    <img src="https://i.blogs.es/juegos/13424/red_dead_3__nombre_temporal_/fotos/noticias/red_dead_3__nombre_temporal_-4711928.jpg" alt="Las Mejores Armas">
+                    <h3 id="titulo2">Las Mejores Armas</h3>
+                    <p>Descubre las armas más poderosas y cómo obtenerlas.</p>
+                    <button class="btn" aria-labelledby="titulo2 boton2" id="boton2" onclick="location.href='armas.html'">Leer más</button>
+                </article>
             </div>
-        </section>
-
-<section id="noticias" class="section noticias">
-    <div class="container">
-        <h2>Últimas Noticias</h2>
-        <div class="card-container">
-            <article class="card">
-                <img src="https://assets.xboxservices.com/assets/b1/95/b195db2f-098c-47bc-b01d-e7ccfbf902f2.jpg?n=Red-Dead-Redemption-II_Feature-Image-Priority-Full-Width-0_RoleBonuses_1248x702.jpg" alt="Actualización">
-                <h3 id="titulo3">Actualización 2024</h3>
-                <p>Novedades del juego y cambios en Red Dead Online.</p>
-                <!-- Botón con enlace oficial -->
-                <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank" class="btn" id="btn" aria-labelledby="titulo3 btn">Leer más</a>
-            </article>
-            <article class="card">
-                <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/12/reddead3.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="Rumores">
-                <h3 id="titulo4">¿RDR3 en camino?</h3>
-                <p>Exploramos rumores sobre una nueva entrega de la saga.</p>
-                <!-- Botón con enlace oficial -->
-                <a href="https://www.rockstargames.com/newswire" target="_blank" class="btn" id="btn" aria-labelledby="titulo4 btn">Leer más</a>
-            </article>
         </div>
-    </div>
-</section>
-
-<section id="personajes" class="section personajes">
-    <div class="container">
-        <h2>Personajes Icónicos</h2>
-        <div class="card-container personajes">
-            <article class="card personaje">
-                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6a964da-f73f-431c-a95b-3d4477268790/dcafyfy-0858efa9-0edf-45ff-8210-0f8f46e2db6a.png/v1/fill/w_1600,h_900,q_80,strp/red_dead_redemption_2___wallpaper_by_3demerzel_dcafyfy-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvZDZhOTY0ZGEtZjczZi00MzFjLWE5NWItM2Q0NDc3MjY4NzkwXC9kY2FmeWZ5LTA4NThlZmE5LTBlZGYtNDVmZi04MjEwLTBmOGY0NmUyZGI2YS5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.wrFyMlz6l9KDNdpIDvFeYcBWOw7E4bMjNb90en9dSIA" alt="Arthur Morgan">
-                <h3 id="titulo5">Arthur Morgan</h3>
-                <p>Un forajido con un código moral que vive en constante conflicto.</p>
-                <button class="btn" id="btn5" aria-labelledby="titulo5 btn5" onclick="location.href='#'">Leer más</button>
-            </article>
-            <article class="card personaje">
-                <img src="https://img.asmedia.epimg.net/resizer/v2/4ZCNJE4RRJKJ5DFRZPN6PKM2ZY.jpg?auth=1711dcbb3ae96520f33f9e0e87125e0029e6dd9a945e4f0b862a782bcf718605&width=1472&height=828&smart=true" alt="Dutch van der Linde">
-                <h3 id="titulo6">Dutch van der Linde</h3>
-                <p>Líder de la banda con ideales utópicos y métodos cuestionables.</p>
-                <button class="btn" id="btn6" aria-labelledby="titulo6 btn6" onclick="location.href='#'">Leer más</button>
-            </article>
-            <article class="card personaje">
-                <img src="https://www.rockstarmag.fr/wp-content/uploads/2023/03/john-marston-red-dead-redemption.jpg" alt="John Marston">
-                <h3 id="titulo7">John Marston</h3>
-                <p>El forajido convertido en granjero, atrapado entre su pasado y su familia.</p>
-                <button class="btn" id="btn7" aria-labelledby="titulo7 btn7" onclick="location.href='#'">Leer más</button>
-            </article>
+    </section>
+    
+    <section id="noticias" class="section noticias">
+        <div class="container">
+            <h2>Últimas Noticias</h2>
+            <div role="grid" class="card-container">
+                <article role="row" class="card">
+                    <img src="https://assets.xboxservices.com/assets/b1/95/b195db2f-098c-47bc-b01d-e7ccfbf902f2.jpg" alt="Actualización 2024">
+                    <h3 id="titulo3">Actualización 2024</h3>
+                    <p>Novedades del juego y cambios en Red Dead Online.</p>
+                    <button class="btn" aria-labelledby="titulo3 boton3" id="boton3" onclick="location.href='https://www.rockstargames.com/reddeadredemption2'" target="_blank">Leer más</button>
+                </article>
+                <article role="row" class="card">
+                    <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/12/reddead3.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="¿RDR3 en camino?">
+                    <h3 id="titulo4">¿RDR3 en camino?</h3>
+                    <p>Exploramos rumores sobre una nueva entrega de la saga.</p>
+                    <button class="btn" aria-labelledby="titulo4 boton4" id="boton4" onclick="location.href='https://www.rockstargames.com/newswire'" target="_blank">Leer más</button>
+                </article>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
+    
+    <section id="personajes" class="section personajes">
+        <div class="container">
+            <h2>Personajes Icónicos</h2>
+            <div role="grid" class="card-container">
+                <article role="row" class="card">
+                    <img src="https://www.mundodeportivo.com/alfabeta/hero/2022/03/red-dead-redemption-2-peaky-blinders-cover.1647031192.8059.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="Arthur Morgan">
+                    <h3 id="titulo5">Arthur Morgan</h3>
+                    <p>Un forajido con un código moral que vive en constante conflicto.</p>
+                    <button class="btn" aria-labelledby="titulo5 boton5" id="boton5" onclick="location.href='#'">Leer más</button>
+                </article>
+                <article role="row" class="card">
+                    <img src="https://img.asmedia.epimg.net/resizer/v2/4ZCNJE4RRJKJ5DFRZPN6PKM2ZY.jpg?auth=1711dcbb3ae96520f33f9e0e87125e0029e6dd9a945e4f0b862a782bcf718605&width=1472&height=828&smart=true" alt="Dutch van der Linde">
+                    <h3 id="titulo6">Dutch van der Linde</h3>
+                    <p>Líder de la banda con ideales utópicos y métodos cuestionables.</p>
+                    <button class="btn" aria-labelledby="titulo6 boton6" id="boton6" onclick="location.href='#'">Leer más</button>
+                </article>
+                <article role="row" class="card">
+                    <img src="https://www.rockstarmag.fr/wp-content/uploads/2023/03/john-marston-red-dead-redemption.jpg" alt="John Marston">
+                    <h3 id="titulo7">John Marston</h3>
+                    <p>El forajido convertido en granjero, atrapado entre su pasado y su familia.</p>
+                    <button class="btn" aria-labelledby="titulo7 boton7" id="boton7" onclick="location.href='#'">Leer más</button>
+                </article>
+            </div>
+        </div>
+    </section>
 </main>
 
+<!-- Pie de página -->
 <footer>
     <div class="container">
         <p>&copy; 2024 Blog RDR2. Todos los derechos reservados.</p>
-        <p>
-            Diseñado por 
-            <a href="https://github.com/FerLose" target="_blank" 
-               class="link" 
-               id="designer-link" 
-               aria-label="Perfil de Fernando Bautista en GitHub">
-               Fernando Bautista
-            </a>.
+        <p>Diseñado por 
+            <a href="https://github.com/FerLose" target="_blank" class="link" id="designer-link" aria-label="Perfil de Fernando Bautista en GitHub">Fernando Bautista</a>.
         </p>
     </div>
 </footer>
 </body>
 </html>
+
