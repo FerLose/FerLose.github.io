@@ -14,7 +14,7 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            color: #f1e3d3; /* Color del texto principal */
+            color: #f1e3d3;
         }
 
         /* Fondo oscuro semitransparente para mejorar la legibilidad */
@@ -30,7 +30,7 @@
         .tabla-titulo {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            color: #e2b84b; /* Dorado inspirado en el juego */
+            color: #e2b84b;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
@@ -45,22 +45,22 @@
             width: 100%;
             border-collapse: collapse;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-            color: #f1e3d3; /* Color del texto */
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #f1e3d3;
         }
 
         .tabla-armas th,
         .tabla-armas td {
             padding: 1rem;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.4); /* Bordes claros */
+            border: 1px solid rgba(255, 255, 255, 0.4);
         }
 
         .tabla-armas th {
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para encabezados */
+            background-color: rgba(0, 0, 0, 0.8);
             text-transform: uppercase;
             font-size: 1.2rem;
-            color: #e2b84b; /* Texto dorado */
+            color: #e2b84b;
         }
 
         .tabla-armas tbody tr:nth-child(even) {
@@ -68,33 +68,12 @@
         }
 
         .tabla-armas tbody tr:nth-child(odd) {
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.4);
         }
 
         .tabla-armas tbody tr:hover {
-            background-color: rgba(226, 184, 75, 0.3); /* Efecto dorado al pasar el cursor */
-            color: #fff;
-            cursor: pointer;
-        }
-
-        /* Botón de volver */
-        .volver {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.8rem 1.5rem;
-            background-color: #8b0000;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 8px;
-            border: 2px solid #ff4500;
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        .volver:hover {
-            background-color: #ff4500;
-            transform: scale(1.1);
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #000;
         }
     </style>
 </head>
@@ -104,89 +83,89 @@
     <h1 class="tabla-titulo">Tabla Comparativa de Armas</h1>
     <p class="tabla-descripcion">Explora las características y diferencias de las armas más icónicas de <strong>Red Dead Redemption 2</strong>.</p>
 
-    <table class="tabla-armas">
+    <table class="tabla-armas" role="table" aria-rowcount="9" aria-colcount="6">
         <thead>
-            <tr>
-                <th>Arma</th>
-                <th>Tipo</th>
-                <th>Daño</th>
-                <th>Precisión</th>
-                <th>Velocidad de Recarga</th>
-                <th>Costo</th>
+            <tr role="row">
+                <th role="columnheader" scope="col">Arma</th>
+                <th role="columnheader" scope="col">Tipo</th>
+                <th role="columnheader" scope="col">Daño</th>
+                <th role="columnheader" scope="col">Precisión</th>
+                <th role="columnheader" scope="col">Velocidad de Recarga</th>
+                <th role="columnheader" scope="col">Costo</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Carabina Lancaster</td>
-                <td>Rifle</td>
-                <td>7/10</td>
-                <td>8/10</td>
-                <td>6/10</td>
-                <td>$145</td>
+            <tr role="row">
+                <td role="cell">Carabina Lancaster</td>
+                <td role="cell">Rifle</td>
+                <td role="cell">7/10</td>
+                <td role="cell">8/10</td>
+                <td role="cell">6/10</td>
+                <td role="cell">$145</td>
             </tr>
-            <tr>
-                <td>Revolver Schofield</td>
-                <td>Revolver</td>
-                <td>6/10</td>
-                <td>7/10</td>
-                <td>5/10</td>
-                <td>$84</td>
+            <tr role="row">
+                <td role="cell">Revolver Schofield</td>
+                <td role="cell">Revolver</td>
+                <td role="cell">6/10</td>
+                <td role="cell">7/10</td>
+                <td role="cell">5/10</td>
+                <td role="cell">$84</td>
             </tr>
-            <tr>
-                <td>Escopeta Repetidora</td>
-                <td>Escopeta</td>
-                <td>9/10</td>
-                <td>5/10</td>
-                <td>4/10</td>
-                <td>$185</td>
+            <tr role="row">
+                <td role="cell">Escopeta Repetidora</td>
+                <td role="cell">Escopeta</td>
+                <td role="cell">9/10</td>
+                <td role="cell">5/10</td>
+                <td role="cell">4/10</td>
+                <td role="cell">$185</td>
             </tr>
-            <tr>
-                <td>Arco</td>
-                <td>Arma de Caza</td>
-                <td>5/10</td>
-                <td>9/10</td>
-                <td>8/10</td>
-                <td>$0 (Incluido)</td>
+            <tr role="row">
+                <td role="cell">Arco</td>
+                <td role="cell">Arma de Caza</td>
+                <td role="cell">5/10</td>
+                <td role="cell">9/10</td>
+                <td role="cell">8/10</td>
+                <td role="cell">$0 (Incluido)</td>
             </tr>
-            <tr>
-                <td>Rifle Rolling Block</td>
-                <td>Rifle de Francotirador</td>
-                <td>10/10</td>
-                <td>9/10</td>
-                <td>3/10</td>
-                <td>$187</td>
+            <tr role="row">
+                <td role="cell">Rifle Rolling Block</td>
+                <td role="cell">Rifle de Francotirador</td>
+                <td role="cell">10/10</td>
+                <td role="cell">9/10</td>
+                <td role="cell">3/10</td>
+                <td role="cell">$187</td>
             </tr>
-            <tr>
-                <td>Pistola Semiautomática</td>
-                <td>Pistola</td>
-                <td>5/10</td>
-                <td>8/10</td>
-                <td>7/10</td>
-                <td>$210</td>
+            <tr role="row">
+                <td role="cell">Pistola Semiautomática</td>
+                <td role="cell">Pistola</td>
+                <td role="cell">5/10</td>
+                <td role="cell">8/10</td>
+                <td role="cell">7/10</td>
+                <td role="cell">$210</td>
             </tr>
-            <tr>
-                <td>Rifle Springfield</td>
-                <td>Rifle</td>
-                <td>9/10</td>
-                <td>7/10</td>
-                <td>4/10</td>
-                <td>$120</td>
+            <tr role="row">
+                <td role="cell">Rifle Springfield</td>
+                <td role="cell">Rifle</td>
+                <td role="cell">9/10</td>
+                <td role="cell">7/10</td>
+                <td role="cell">4/10</td>
+                <td role="cell">$120</td>
             </tr>
-            <tr>
-                <td>Escopeta de Cañón Recortado</td>
-                <td>Escopeta</td>
-                <td>8/10</td>
-                <td>6/10</td>
-                <td>5/10</td>
-                <td>$95</td>
+            <tr role="row">
+                <td role="cell">Escopeta de Cañón Recortado</td>
+                <td role="cell">Escopeta</td>
+                <td role="cell">8/10</td>
+                <td role="cell">6/10</td>
+                <td role="cell">5/10</td>
+                <td role="cell">$95</td>
             </tr>
-            <tr>
-                <td>Rifle de Repetición Litchfield</td>
-                <td>Rifle</td>
-                <td>8/10</td>
-                <td>7/10</td>
-                <td>6/10</td>
-                <td>$145</td>
+            <tr role="row">
+                <td role="cell">Rifle de Repetición Litchfield</td>
+                <td role="cell">Rifle</td>
+                <td role="cell">8/10</td>
+                <td role="cell">7/10</td>
+                <td role="cell">6/10</td>
+                <td role="cell">$145</td>
             </tr>
         </tbody>
     </table>
@@ -196,4 +175,3 @@
 
 </body>
 </html>
-
