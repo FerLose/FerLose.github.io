@@ -210,3 +210,91 @@ footer a:hover {
         padding: 20px;
     }
 }
+
+/* Sección de contacto */
+.section.contacto {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3rem 1rem;
+    color: #f1e3d3;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #e2b84b;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #e2b84b;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f1e3d3;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #e2b84b;
+    box-shadow: 0 0 5px #e2b84b;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+textarea {
+    resize: none;
+}
+
+button.btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: #e2b84b;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.btn:hover {
+    background-color: #c89a39;
+    transform: translateY(-2px);
+}
+
+button.btn:active {
+    transform: translateY(1px);
+}
