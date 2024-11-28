@@ -15,66 +15,80 @@
             background-attachment: fixed;
             background-position: center;
             color: #f1e3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            flex-direction: column;
         }
 
-        /* Fondo oscuro semitransparente para mejorar la legibilidad */
         .tabla-container {
-            text-align: center;
-            padding: 2rem;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 8px;
             max-width: 90%;
-            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .tabla-titulo {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
             color: #e2b84b;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         .tabla-descripcion {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #f1e3d3;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
         }
 
-        /* Tabla de armas */
-        .tabla-armas {
+        /* Estilo de tabla */
+        [role="table"] {
+            display: table;
             width: 100%;
             border-collapse: collapse;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #f1e3d3;
         }
 
-        .tabla-armas th,
-        .tabla-armas td {
+        [role="rowgroup"] {
+            display: table-row-group;
+        }
+
+        [role="row"] {
+            display: table-row;
+        }
+
+        [role="columnheader"],
+        [role="cell"] {
+            display: table-cell;
             padding: 1rem;
+            border: 1px solid #e2b84b;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.4);
         }
 
-        .tabla-armas th {
-            background-color: rgba(0, 0, 0, 0.8);
-            text-transform: uppercase;
-            font-size: 1.2rem;
+        [role="columnheader"] {
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.9);
             color: #e2b84b;
+            text-transform: uppercase;
         }
 
-        .tabla-armas tbody tr:nth-child(even) {
+        [role="row"]:nth-child(even) [role="cell"] {
             background-color: rgba(255, 255, 255, 0.1);
         }
 
-        .tabla-armas tbody tr:nth-child(odd) {
-            background-color: rgba(0, 0, 0, 0.4);
+        [role="row"]:nth-child(odd) [role="cell"] {
+            background-color: rgba(0, 0, 0, 0.6);
         }
 
-        .tabla-armas tbody tr:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-            color: #000;
+        [role="row"]:hover [role="cell"] {
+            background-color: rgba(255, 255, 255, 0.2);
         }
+
+        /* Botón de volver */
         .volver {
             display: inline-block;
             margin-top: 2rem;
@@ -87,6 +101,7 @@
             border-radius: 8px;
             border: 2px solid #ff4500;
             transition: transform 0.3s, background-color 0.3s;
+            text-align: center;
         }
 
         .volver:hover {
@@ -100,93 +115,76 @@
 <div class="tabla-container">
     <h1 class="tabla-titulo">Tabla Comparativa de Armas</h1>
     <p class="tabla-descripcion">Explora las características y diferencias de las armas más icónicas de <strong>Red Dead Redemption 2</strong>.</p>
+    
+    <div role="table" aria-label="Armas" aria-describedby="tabla_desc">
+        <div id="tabla_desc">
+            Tabla comparativa de armas con información sobre daño, precisión, velocidad de recarga y costo.
+        </div>
 
-    <table class="tabla-armas" role="table" aria-rowcount="9" aria-colcount="6">
-        <thead>
-            <tr role="row">
-                <th role="columnheader" scope="col">Arma</th>
-                <th role="columnheader" scope="col">Tipo</th>
-                <th role="columnheader" scope="col">Daño</th>
-                <th role="columnheader" scope="col">Precisión</th>
-                <th role="columnheader" scope="col">Velocidad de Recarga</th>
-                <th role="columnheader" scope="col">Costo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr role="row">
-                <td role="cell">Carabina Lancaster</td>
-                <td role="cell">Rifle</td>
-                <td role="cell">7/10</td>
-                <td role="cell">8/10</td>
-                <td role="cell">6/10</td>
-                <td role="cell">$145</td>
-            </tr>
-            <tr role="row">
-                <td role="cell">Revolver Schofield</td>
-                <td role="cell">Revolver</td>
-                <td role="cell">6/10</td>
-                <td role="cell">7/10</td>
-                <td role="cell">5/10</td>
-                <td role="cell">$84</td>
-            </tr>
-            <tr role="row">
-                <td role="cell">Escopeta Repetidora</td>
-                <td role="cell">Escopeta</td>
-                <td role="cell">9/10</td>
-                <td role="cell">5/10</td>
-                <td role="cell">4/10</td>
-                <td role="cell">$185</td>
-            </tr>
-            <tr role="row">
-                <td role="cell">Arco</td>
-                <td role="cell">Arma de Caza</td>
-                <td role="cell">5/10</td>
-                <td role="cell">9/10</td>
-                <td role="cell">8/10</td>
-                <td role="cell">$0 (Incluido)</td>
-            </tr>
-            <tr role="row">
-                <td role="cell">Rifle Rolling Block</td>
-                <td role="cell">Rifle de Francotirador</td>
-                <td role="cell">10/10</td>
-                <td role="cell">9/10</td>
-                <td role="cell">3/10</td>
-                <td role="cell">$187</td>
-            </tr>
-            <tr role="row">
-                <td role="cell">Pistola Semiautomática</td>
-                <td role="cell">Pistola</td>
-                <td role="cell">5/10</td>
-                <td role="cell">8/10</td>
-                <td role="cell">7/10</td>
-                <td role="cell">$210</td>
-            </tr>
-            <tr role="row">
-                <td role="cell">Rifle Springfield</td>
-                <td role="cell">Rifle</td>
-                <td role="cell">9/10</td>
-                <td role="cell">7/10</td>
-                <td role="cell">4/10</td>
-                <td role="cell">$120</td>
-            </tr>
-            <tr role="row">
-                <td role="cell">Escopeta de Cañón Recortado</td>
-                <td role="cell">Escopeta</td>
-                <td role="cell">8/10</td>
-                <td role="cell">6/10</td>
-                <td role="cell">5/10</td>
-                <td role="cell">$95</td>
-            </tr>
-            <tr role="row">
-                <td role="cell">Rifle de Repetición Litchfield</td>
-                <td role="cell">Rifle</td>
-                <td role="cell">8/10</td>
-                <td role="cell">7/10</td>
-                <td role="cell">6/10</td>
-                <td role="cell">$145</td>
-            </tr>
-        </tbody>
-    </table>
+        <!-- Encabezados -->
+        <div role="rowgroup">
+            <div role="row">
+                <span role="columnheader">Arma</span>
+                <span role="columnheader">Tipo</span>
+                <span role="columnheader">Daño</span>
+                <span role="columnheader">Precisión</span>
+                <span role="columnheader">Velocidad de Recarga</span>
+                <span role="columnheader">Costo</span>
+            </div>
+        </div>
+
+        <!-- Filas de datos -->
+        <div role="rowgroup">
+            <div role="row">
+                <span role="cell">Carabina Lancaster</span>
+                <span role="cell">Rifle</span>
+                <span role="cell">7/10</span>
+                <span role="cell">8/10</span>
+                <span role="cell">6/10</span>
+                <span role="cell">$145</span>
+            </div>
+            <div role="row">
+                <span role="cell">Revolver Schofield</span>
+                <span role="cell">Revolver</span>
+                <span role="cell">6/10</span>
+                <span role="cell">7/10</span>
+                <span role="cell">5/10</span>
+                <span role="cell">$84</span>
+            </div>
+            <div role="row">
+                <span role="cell">Escopeta Repetidora</span>
+                <span role="cell">Escopeta</span>
+                <span role="cell">9/10</span>
+                <span role="cell">5/10</span>
+                <span role="cell">4/10</span>
+                <span role="cell">$185</span>
+            </div>
+            <div role="row">
+                <span role="cell">Arco</span>
+                <span role="cell">Arma de Caza</span>
+                <span role="cell">5/10</span>
+                <span role="cell">9/10</span>
+                <span role="cell">8/10</span>
+                <span role="cell">$0 (Incluido)</span>
+            </div>
+            <div role="row">
+                <span role="cell">Rifle Rolling Block</span>
+                <span role="cell">Rifle de Francotirador</span>
+                <span role="cell">10/10</span>
+                <span role="cell">9/10</span>
+                <span role="cell">3/10</span>
+                <span role="cell">$187</span>
+            </div>
+            <div role="row">
+                <span role="cell">Pistola Semiautomática</span>
+                <span role="cell">Pistola</span>
+                <span role="cell">5/10</span>
+                <span role="cell">8/10</span>
+                <span role="cell">7/10</span>
+                <span role="cell">$210</span>
+            </div>
+        </div>
+    </div>
 
     <a href="index.html" class="volver">Volver al Inicio</a>
 </div>
